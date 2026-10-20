@@ -38,6 +38,14 @@
 
 生产实现含品牌内部经营数据与私有服务配置，**源码与数据不对外开源**。本仓库公开架构、设计决策与脱敏演示，供技术交流。
 
+## 体系定位
+
+本仓库是 [ai-native-team](https://github.com/Babymrbbbb/ai-native-team)「AI 原生组织 OS」体系的**交付层**组件——体系跑出来的业务结果，最终落在本套件的两个 Electron 桌面应用里，交付给一线每天使用。
+
+> 接入 AI（[sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway)）→ 用好 AI（[prompt-craft](https://github.com/Babymrbbbb/prompt-craft)）→ LLM×RAG 知识库（[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)）→ 组织 AI 落地（[ai-native-team](https://github.com/Babymrbbbb/ai-native-team)）→ 交付业务结果（本仓库：经营决策平台 / 调度运维工作台）
+
+相关项目：旗舰 [ai-native-team](https://github.com/Babymrbbbb/ai-native-team) · 模型层 [sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway) · 方法层 [prompt-craft](https://github.com/Babymrbbbb/prompt-craft) · 知识层 [llm-wiki](https://github.com/Babymrbbbb/llm-wiki) · 编排对照 [langgraph-agent-demo](https://github.com/Babymrbbbb/langgraph-agent-demo)
+
 ## License
 
 MIT
