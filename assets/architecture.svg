@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 396" width="680" height="396" role="img">
+  <title>Swan Electron Suite 架构</title>
+  <desc>两个 Electron 桌面应用共享一套运行时（主进程/渲染层/内嵌 Node 后端），下单实例锁与空闲端口探测，读写本地 45 店经营数据；源码与数据不对外。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="110" y="44" width="210" height="64" rx="10" fill="#2C2C2A" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="215" y="63" font-size="12" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">Electron 桌面应用</text>
+  <text x="215" y="85" font-size="14" font-weight="500" fill="#F1EFE8" text-anchor="middle" dominant-baseline="central">经营决策平台 / 驾驶舱</text>
+  <rect x="370" y="44" width="210" height="64" rx="10" fill="#2C2C2A" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="475" y="63" font-size="12" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">Electron 桌面应用</text>
+  <text x="475" y="85" font-size="14" font-weight="500" fill="#F1EFE8" text-anchor="middle" dominant-baseline="central">AI 调度运维工作台</text>
+  <path d="M215 108 L340 180" fill="none" stroke="#EF9F27" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M475 108 L340 180" fill="none" stroke="#EF9F27" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="356" y="146" font-size="12" font-weight="400" fill="#EF9F27" dominant-baseline="central">调用</text>
+  <rect x="40" y="180" width="600" height="96" rx="12" fill="#633806" stroke="#EF9F27" stroke-width="1"/>
+  <text x="56" y="201" font-size="12" font-weight="400" fill="#EF9F27" dominant-baseline="central">共享运行时 · Electron + Node.js</text>
+  <text x="56" y="225" font-size="14" font-weight="500" fill="#FAC775" dominant-baseline="central">主进程 · 渲染层 UI · 内嵌 Node 后端 · 本地 HTTP + SSE</text>
+  <text x="56" y="249" font-size="12" font-weight="400" fill="#EF9F27" dominant-baseline="central">单实例锁 · 空闲端口探测 · 配置化服务管理 · 免部署免鉴权双击即用</text>
+  <path d="M340 276 L340 316" fill="none" stroke="#EF9F27" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="356" y="297" font-size="12" font-weight="400" fill="#EF9F27" dominant-baseline="central">读写本地数据</text>
+  <rect x="40" y="316" width="600" height="56" rx="10" fill="#2C2C2A" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="56" y="335" font-size="12" font-weight="400" fill="#B4B2A9" dominant-baseline="central">数据源 · 含内部经营数据（源码与数据不对外）</text>
+  <text x="56" y="355" font-size="14" font-weight="500" fill="#F1EFE8" dominant-baseline="central">45 店经营数据 · 次日自动生成分析 · 替代人工采集汇总</text>
+</svg>
